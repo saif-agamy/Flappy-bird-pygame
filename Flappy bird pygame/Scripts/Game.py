@@ -73,8 +73,8 @@ class Game :
             if self.player.playerLost :
 
                 self.lostScreen.fill((255,255,0))
-                self.lostScreen.blit(LoseText,(self.lostScreen.get_width()/2 - LoseText.get_width()/2,(self.lostScreen.get_height()/2 - LoseText.get_height()/2)+25))
-                self.lostScreen.blit(LastScoreText,(self.lostScreen.get_width()/2 - LastScoreText.get_width()/2,(self.lostScreen.get_height()/2 - LastScoreText.get_height()/2)-25))
+                self.lostScreen.blit(LoseText,(self.lostScreen.get_width()/2 - LoseText.get_width()/2,(self.lostScreen.get_height()/2 - LoseText.get_height()/2)-25))
+                self.lostScreen.blit(LastScoreText,(self.lostScreen.get_width()/2 - LastScoreText.get_width()/2,(self.lostScreen.get_height()/2 - LastScoreText.get_height()/2)+25))
                 self.display.blit(self.lostScreen,(self.display.get_width()/2 - self.lostScreen.get_width()/2,self.display.get_height()/2 - self.lostScreen.get_height()/2))
                 
       
